@@ -39,3 +39,5 @@ This repository includes a GitHub Actions workflow that builds the Vite app and 
 For the project URL `https://felipeolguera.github.io/GAAdvanced/`, the workflow sets `GITHUB_PAGES=true` so Vite emits asset URLs with the `/GAAdvanced/` base path.
 
 If Pages is still configured to publish from a branch root, switch the repository Pages source to **GitHub Actions** in GitHub settings so the built app is served instead of the raw `index.html` source file.
+
+If GitHub reports that `main` is not allowed to deploy to `github-pages`, open **Settings > Environments > github-pages > Deployment branches and tags** and allow `main`, or remove the branch restriction for that environment.
