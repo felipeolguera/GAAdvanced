@@ -30,3 +30,12 @@ The app defaults to the public GA API. To point at a different compatible API, s
 ```bash
 VITE_GATCG_BASE_URL=https://api.gatcg.com
 ```
+
+
+## GitHub Pages deployment
+
+This repository includes a GitHub Actions workflow that builds the Vite app and publishes the `dist` folder to GitHub Pages whenever `main` is updated.
+
+For the project URL `https://felipeolguera.github.io/GAAdvanced/`, the workflow sets `GITHUB_PAGES=true` so Vite emits asset URLs with the `/GAAdvanced/` base path.
+
+If Pages is still configured to publish from a branch root, switch the repository Pages source to **GitHub Actions** in GitHub settings so the built app is served instead of the raw `index.html` source file.
